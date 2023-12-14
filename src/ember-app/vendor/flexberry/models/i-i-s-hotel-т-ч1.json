@@ -1,0 +1,63 @@
+﻿{
+  "name": "IISHotelТЧ1",
+  "modelName": "i-i-s-hotel-т-ч1",
+  "className": "ТЧ1",
+  "nameSpace": "IIS.Hotel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "имущество",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "стоимость",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "аОПИ",
+      "relatedTo": "i-i-s-hotel-а-о-п-и",
+      "inverse": "тЧ1"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧ1E",
+      "modelName": "i-i-s-hotel-т-ч1",
+      "attrs": [
+        {
+          "name": "имущество",
+          "caption": "Имущество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

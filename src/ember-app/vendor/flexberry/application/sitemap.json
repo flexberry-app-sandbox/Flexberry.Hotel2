@@ -1,0 +1,71 @@
+﻿{
+  "applicationCaption": "Hotel",
+  "applicationTitle": "Hotel",
+  "items": [
+    {
+      "link": null,
+      "menuName": "hotel",
+      "caption": "Hotel",
+      "title": "Hotel",
+      "children": [
+        {
+          "link": "i-i-s-hotel-персонал-l",
+          "menuName": null,
+          "caption": "Персонал",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-админ-l",
+          "menuName": null,
+          "caption": "Админ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-пасп-данные-l",
+          "menuName": null,
+          "caption": "Пасп данные",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-гостиница-l",
+          "menuName": null,
+          "caption": "Гостиница",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-анкета-к-l",
+          "menuName": null,
+          "caption": "Анкета К",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-а-о-п-и-l",
+          "menuName": null,
+          "caption": "АОПИ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-ж-р-и-г-l",
+          "menuName": null,
+          "caption": "ЖРИГ",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

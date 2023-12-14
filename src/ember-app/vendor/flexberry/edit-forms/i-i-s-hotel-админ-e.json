@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Гостиница",
+      "projection": "ГостиницаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Персонал",
+      "projection": "ПерсоналL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Админ",
+  "name": "IISHotelАдминE",
+  "className": "АдминE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-админ",
+      "modelProjection": "АдминE"
+    }
+  ]
+}

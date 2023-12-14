@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Hotel.model.Personal</class>
+        <class>Hotel.model.Admin</class>
+        <class>Hotel.model.TCH1</class>
+        <class>Hotel.model.PaspDannye</class>
+        <class>Hotel.model.Gostinica</class>
+        <class>Hotel.model.Dolzhnost</class>
+        <class>Hotel.model.TCH2</class>
+        <class>Hotel.model.AnketaK</class>
+        <class>Hotel.model.AOPI</class>
+        <class>Hotel.model.ZHRIG</class>
+        <class>Hotel.model.FlexberryAdvLimit</class>
+        <class>Hotel.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Hotel.model.NewPlatformFlexberryServicesLock</class>
+        <class>Hotel.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

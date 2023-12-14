@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-hotel-анкета-к-e",
+  "editForm": "i-i-s-hotel-анкета-к-e",
+  "external": false,
+  "caption": "Анкета К",
+  "name": "IISHotelАнкетаКL",
+  "className": "АнкетаКL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-анкета-к",
+      "modelProjection": "АнкетаКL"
+    }
+  ]
+}

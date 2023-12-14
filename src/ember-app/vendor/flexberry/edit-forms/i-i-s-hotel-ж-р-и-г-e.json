@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Админ",
+      "projection": "АдминL",
+      "detailModelName": null
+    },
+    {
+      "master": "персонал",
+      "displayAttributeName": null,
+      "required": true,
+      "relationName": "ТЧ2.Персонал",
+      "projection": "ПерсоналL",
+      "detailModelName": "i-i-s-hotel-т-ч2"
+    }
+  ],
+  "external": false,
+  "caption": "ЖРИГ",
+  "name": "IISHotelЖРИГE",
+  "className": "ЖРИГE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-ж-р-и-г",
+      "modelProjection": "ЖРИГE"
+    }
+  ]
+}

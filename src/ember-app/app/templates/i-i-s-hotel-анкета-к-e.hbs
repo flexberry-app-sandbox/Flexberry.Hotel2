@@ -1,0 +1,91 @@
+<h3 class="ui header">{{t "forms.i-i-s-hotel-анкета-к-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номерК
+      class=(if (v-get validationModel "номерК" "isInvalid") "error")
+      label=(t "forms.i-i-s-hotel-анкета-к-e.номерК-caption")
+      data-test-i-i-s-hotel-анкета-к-e-номерК=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номерК" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-hotel-анкета-к-e.прибытие-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.прибытие
+      class=(if (v-get validationModel "прибытие" "isInvalid") "error")
+      data-test-i-i-s-hotel-анкета-к-e-прибытие=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "прибытие" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-hotel-анкета-к-e.убытие-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.убытие
+      class=(if (v-get validationModel "убытие" "isInvalid") "error")
+      data-test-i-i-s-hotel-анкета-к-e-убытие=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "убытие" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-hotel-анкета-к-e.админ-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.админ
+      relationName="админ"
+      projection="АдминL"
+      title=(t "forms.i-i-s-hotel-анкета-к-e.админ-caption")
+      readonly=readonly
+      componentName="админLookup"
+      class=(if (v-get validationModel "админ" "isInvalid") "error")
+      data-test-i-i-s-hotel-анкета-к-e-админ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "админ" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-hotel-анкета-к-e.персонал-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.персонал
+      relationName="персонал"
+      projection="ПерсоналL"
+      title=(t "forms.i-i-s-hotel-анкета-к-e.персонал-caption")
+      readonly=readonly
+      componentName="персоналLookup"
+      class=(if (v-get validationModel "персонал" "isInvalid") "error")
+      data-test-i-i-s-hotel-анкета-к-e-персонал=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "персонал" "message")}}
+  </div>
+</form>

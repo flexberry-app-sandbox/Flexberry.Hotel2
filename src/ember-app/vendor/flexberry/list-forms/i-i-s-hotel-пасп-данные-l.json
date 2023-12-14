@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-hotel-пасп-данные-e",
+  "editForm": "i-i-s-hotel-пасп-данные-e",
+  "external": false,
+  "caption": "Пасп данные",
+  "name": "IISHotelПаспДанныеL",
+  "className": "ПаспДанныеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-пасп-данные",
+      "modelProjection": "ПаспДанныеL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-hotel-админ-e",
+  "editForm": "i-i-s-hotel-админ-e",
+  "external": false,
+  "caption": "Админ",
+  "name": "IISHotelАдминL",
+  "className": "АдминL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-админ",
+      "modelProjection": "АдминL"
+    }
+  ]
+}

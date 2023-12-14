@@ -1,0 +1,140 @@
+﻿{
+  "name": "IISHotelАнкетаК",
+  "modelName": "i-i-s-hotel-анкета-к",
+  "className": "АнкетаК",
+  "nameSpace": "IIS.Hotel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерК",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "прибытие",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "убытие",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "админ",
+      "relatedTo": "i-i-s-hotel-админ",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "персонал",
+      "relatedTo": "i-i-s-hotel-персонал",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "АнкетаКE",
+      "modelName": "i-i-s-hotel-анкета-к",
+      "attrs": [
+        {
+          "name": "номерК",
+          "caption": "Номер К",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "прибытие",
+          "caption": "Прибытие",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "убытие",
+          "caption": "Убытие",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Админ",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 3,
+          "type": "standard",
+          "caption": "Админ",
+          "name": "админ",
+          "relatedTo": "i-i-s-hotel-админ",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 4,
+          "type": "standard",
+          "caption": "Персонал",
+          "name": "персонал",
+          "relatedTo": "i-i-s-hotel-персонал",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "АнкетаКL",
+      "modelName": "i-i-s-hotel-анкета-к",
+      "attrs": [
+        {
+          "name": "номерК",
+          "caption": "Номер К",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "прибытие",
+          "caption": "Прибытие",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "убытие",
+          "caption": "Убытие",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

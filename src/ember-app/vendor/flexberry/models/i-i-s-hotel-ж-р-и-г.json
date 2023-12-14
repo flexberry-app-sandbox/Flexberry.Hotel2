@@ -1,0 +1,112 @@
+﻿{
+  "name": "IISHotelЖРИГ",
+  "modelName": "i-i-s-hotel-ж-р-и-г",
+  "className": "ЖРИГ",
+  "nameSpace": "IIS.Hotel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерЖурн",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "админ",
+      "relatedTo": "i-i-s-hotel-админ",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧ2",
+      "relatedTo": "i-i-s-hotel-т-ч2",
+      "inverse": "жРИГ"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЖРИГE",
+      "modelName": "i-i-s-hotel-ж-р-и-г",
+      "attrs": [
+        {
+          "name": "номерЖурн",
+          "caption": "Номер журн",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Админ",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 2,
+          "type": "standard",
+          "caption": "Админ",
+          "name": "админ",
+          "relatedTo": "i-i-s-hotel-админ",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧ2E",
+          "caption": "Т ч2",
+          "name": "тЧ2",
+          "relatedTo": "i-i-s-hotel-т-ч2",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЖРИГL",
+      "modelName": "i-i-s-hotel-ж-р-и-г",
+      "attrs": [
+        {
+          "name": "номерЖурн",
+          "caption": "Номер журн",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,103 @@
+﻿{
+  "name": "IISHotelАдмин",
+  "modelName": "i-i-s-hotel-админ",
+  "className": "Админ",
+  "nameSpace": "IIS.Hotel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "гостиница",
+      "relatedTo": "i-i-s-hotel-гостиница",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "персонал",
+      "relatedTo": "i-i-s-hotel-персонал",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "АдминE",
+      "modelName": "i-i-s-hotel-админ",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Название",
+          "lookupValueField": "название",
+          "relationName": "Гостиница",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Гостиница",
+          "name": "гостиница",
+          "relatedTo": "i-i-s-hotel-гостиница",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 2,
+          "type": "standard",
+          "caption": "Персонал",
+          "name": "персонал",
+          "relatedTo": "i-i-s-hotel-персонал",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "АдминL",
+      "modelName": "i-i-s-hotel-админ",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Гостиница",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Название",
+          "name": "гостиница",
+          "relatedTo": "i-i-s-hotel-гостиница",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

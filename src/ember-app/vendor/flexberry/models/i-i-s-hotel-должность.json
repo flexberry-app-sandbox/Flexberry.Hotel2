@@ -1,0 +1,127 @@
+﻿{
+  "name": "IISHotelДолжность",
+  "modelName": "i-i-s-hotel-должность",
+  "className": "Должность",
+  "nameSpace": "IIS.Hotel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кодДолжност",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "название",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "паспДанные",
+      "relatedTo": "i-i-s-hotel-пасп-данные",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДолжностьE",
+      "modelName": "i-i-s-hotel-должность",
+      "attrs": [
+        {
+          "name": "кодДолжност",
+          "caption": "Код должност",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "ПаспДанные",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Пасп данные",
+          "name": "паспДанные",
+          "relatedTo": "i-i-s-hotel-пасп-данные",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ДолжностьL",
+      "modelName": "i-i-s-hotel-должность",
+      "attrs": [
+        {
+          "name": "кодДолжност",
+          "caption": "Код должност",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПаспДанные",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "паспДанные",
+          "relatedTo": "i-i-s-hotel-пасп-данные",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

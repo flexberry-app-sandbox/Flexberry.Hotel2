@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Персонал",
+      "projection": "ПерсоналL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Админ",
+      "projection": "АдминL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "АОПИ",
+  "name": "IISHotelАОПИE",
+  "className": "АОПИE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-а-о-п-и",
+      "modelProjection": "АОПИE"
+    }
+  ]
+}

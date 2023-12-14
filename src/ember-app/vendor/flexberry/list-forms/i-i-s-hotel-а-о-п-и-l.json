@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-hotel-а-о-п-и-e",
+  "editForm": "i-i-s-hotel-а-о-п-и-e",
+  "external": false,
+  "caption": "АОПИ",
+  "name": "IISHotelАОПИL",
+  "className": "АОПИL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-а-о-п-и",
+      "modelProjection": "АОПИL"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПаспДанные",
+      "projection": "ПаспДанныеL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Должность",
+      "projection": "ДолжностьL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Персонал",
+  "name": "IISHotelПерсоналE",
+  "className": "ПерсоналE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-персонал",
+      "modelProjection": "ПерсоналE"
+    }
+  ]
+}

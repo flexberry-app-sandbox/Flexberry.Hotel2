@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-hotel-гостиница-e",
+  "editForm": "i-i-s-hotel-гостиница-e",
+  "external": false,
+  "caption": "Гостиница",
+  "name": "IISHotelГостиницаL",
+  "className": "ГостиницаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-гостиница",
+      "modelProjection": "ГостиницаL"
+    }
+  ]
+}

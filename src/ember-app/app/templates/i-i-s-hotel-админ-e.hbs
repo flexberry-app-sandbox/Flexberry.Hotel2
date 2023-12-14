@@ -1,0 +1,61 @@
+<h3 class="ui header">{{t "forms.i-i-s-hotel-админ-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-hotel-админ-e.гостиница-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.гостиница
+      displayAttributeName="название"
+      autocomplete=true
+      relationName="гостиница"
+      projection="ГостиницаL"
+      title=(t "forms.i-i-s-hotel-админ-e.гостиница-caption")
+      readonly=readonly
+      componentName="гостиницаLookup"
+      class=(if (v-get validationModel "гостиница" "isInvalid") "error")
+      data-test-i-i-s-hotel-админ-e-гостиница=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "гостиница" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-hotel-админ-e.персонал-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.персонал
+      relationName="персонал"
+      projection="ПерсоналL"
+      title=(t "forms.i-i-s-hotel-админ-e.персонал-caption")
+      readonly=readonly
+      componentName="персоналLookup"
+      class=(if (v-get validationModel "персонал" "isInvalid") "error")
+      data-test-i-i-s-hotel-админ-e-персонал=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "персонал" "message")}}
+  </div>
+</form>

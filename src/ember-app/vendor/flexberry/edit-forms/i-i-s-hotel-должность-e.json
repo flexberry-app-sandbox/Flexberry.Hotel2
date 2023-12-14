@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПаспДанные",
+      "projection": "ПаспДанныеL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Должность",
+  "name": "IISHotelДолжностьE",
+  "className": "ДолжностьE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-должность",
+      "modelProjection": "ДолжностьE"
+    }
+  ]
+}

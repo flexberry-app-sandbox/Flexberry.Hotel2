@@ -1,0 +1,112 @@
+﻿{
+  "name": "IISHotelАОПИ",
+  "modelName": "i-i-s-hotel-а-о-п-и",
+  "className": "АОПИ",
+  "nameSpace": "IIS.Hotel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерКомнаты",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "админ",
+      "relatedTo": "i-i-s-hotel-админ",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "персонал",
+      "relatedTo": "i-i-s-hotel-персонал",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧ1",
+      "relatedTo": "i-i-s-hotel-т-ч1",
+      "inverse": "аОПИ"
+    }
+  ],
+  "projections": [
+    {
+      "name": "АОПИE",
+      "modelName": "i-i-s-hotel-а-о-п-и",
+      "attrs": [
+        {
+          "name": "номерКомнаты",
+          "caption": "Номер комнаты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 1,
+          "type": "standard",
+          "caption": "Персонал",
+          "name": "персонал",
+          "relatedTo": "i-i-s-hotel-персонал",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Админ",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 2,
+          "type": "standard",
+          "caption": "Админ",
+          "name": "админ",
+          "relatedTo": "i-i-s-hotel-админ",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧ1E",
+          "caption": "Т ч1",
+          "name": "тЧ1",
+          "relatedTo": "i-i-s-hotel-т-ч1",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "АОПИL",
+      "modelName": "i-i-s-hotel-а-о-п-и",
+      "attrs": [
+        {
+          "name": "номерКомнаты",
+          "caption": "Номер комнаты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

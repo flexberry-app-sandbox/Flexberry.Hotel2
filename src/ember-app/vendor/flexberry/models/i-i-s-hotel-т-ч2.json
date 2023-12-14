@@ -1,0 +1,100 @@
+﻿{
+  "name": "IISHotelТЧ2",
+  "modelName": "i-i-s-hotel-т-ч2",
+  "className": "ТЧ2",
+  "nameSpace": "IIS.Hotel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерКомнаты",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "прибытие",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "убытие",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "персонал",
+      "relatedTo": "i-i-s-hotel-персонал",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "жРИГ",
+      "relatedTo": "i-i-s-hotel-ж-р-и-г",
+      "inverse": "тЧ2"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧ2E",
+      "modelName": "i-i-s-hotel-т-ч2",
+      "attrs": [
+        {
+          "name": "номерКомнаты",
+          "caption": "Номер комнаты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "прибытие",
+          "caption": "Прибытие",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "убытие",
+          "caption": "Убытие",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Персонал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 3,
+          "type": "standard",
+          "caption": "Персонал",
+          "name": "персонал",
+          "relatedTo": "i-i-s-hotel-персонал",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

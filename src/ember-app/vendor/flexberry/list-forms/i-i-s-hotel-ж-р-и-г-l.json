@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-hotel-ж-р-и-г-e",
+  "editForm": "i-i-s-hotel-ж-р-и-г-e",
+  "external": false,
+  "caption": "ЖРИГ",
+  "name": "IISHotelЖРИГL",
+  "className": "ЖРИГL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-ж-р-и-г",
+      "modelProjection": "ЖРИГL"
+    }
+  ]
+}

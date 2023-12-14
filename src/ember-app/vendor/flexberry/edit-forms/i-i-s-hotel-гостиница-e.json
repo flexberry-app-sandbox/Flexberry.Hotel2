@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Гостиница",
+  "name": "IISHotelГостиницаE",
+  "className": "ГостиницаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-гостиница",
+      "modelProjection": "ГостиницаE"
+    }
+  ]
+}

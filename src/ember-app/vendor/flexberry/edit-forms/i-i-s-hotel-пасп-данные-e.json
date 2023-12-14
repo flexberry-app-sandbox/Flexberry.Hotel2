@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Пасп данные",
+  "name": "IISHotelПаспДанныеE",
+  "className": "ПаспДанныеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-пасп-данные",
+      "modelProjection": "ПаспДанныеE"
+    }
+  ]
+}

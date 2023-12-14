@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-hotel-должность-e",
+  "editForm": "i-i-s-hotel-должность-e",
+  "external": false,
+  "caption": "Должность",
+  "name": "IISHotelДолжностьL",
+  "className": "ДолжностьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-должность",
+      "modelProjection": "ДолжностьL"
+    }
+  ]
+}
