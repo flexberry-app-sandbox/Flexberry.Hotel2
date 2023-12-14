@@ -53,29 +53,7 @@
           "index": 1
         }
       ],
-      "belongsTo": [
-        {
-          "lookupValue": "ФИО",
-          "lookupValueField": "фИО",
-          "relationName": "ПаспДанные",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "фИО",
-              "caption": "ФИО",
-              "hidden": true,
-              "index": 3
-            }
-          ],
-          "index": 2,
-          "type": "standard",
-          "caption": "Пасп данные",
-          "name": "паспДанные",
-          "relatedTo": "i-i-s-hotel-пасп-данные",
-          "inverse": null
-        }
-      ],
+      "belongsTo": [],
       "hasMany": []
     },
     {
@@ -95,29 +73,7 @@
           "index": 1
         }
       ],
-      "belongsTo": [
-        {
-          "lookupValue": null,
-          "lookupValueField": null,
-          "relationName": "ПаспДанные",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "фИО",
-              "caption": "ФИО",
-              "hidden": false,
-              "index": 2
-            }
-          ],
-          "index": -1,
-          "type": "default",
-          "caption": "ФИО",
-          "name": "паспДанные",
-          "relatedTo": "i-i-s-hotel-пасп-данные",
-          "inverse": null
-        }
-      ],
+      "belongsTo": [],
       "hasMany": []
     }
   ],

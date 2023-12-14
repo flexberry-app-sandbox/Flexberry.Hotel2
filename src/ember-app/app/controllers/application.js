@@ -28,49 +28,49 @@ export default Controller.extend({
             link: 'i-i-s-hotel-персонал-l',
             caption: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-персонал-l.caption'),
             title: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-персонал-l.title'),
-            icon: 'file',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-hotel-админ-l',
             caption: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-админ-l.caption'),
             title: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-админ-l.title'),
-            icon: 'tasks',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-hotel-пасп-данные-l',
             caption: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-пасп-данные-l.caption'),
             title: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-пасп-данные-l.title'),
-            icon: 'folder open',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-hotel-гостиница-l',
             caption: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-гостиница-l.caption'),
             title: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-гостиница-l.title'),
-            icon: 'file',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-hotel-должность-l',
             caption: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-должность-l.caption'),
             title: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-должность-l.title'),
-            icon: 'folder',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-hotel-анкета-к-l',
             caption: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-анкета-к-l.caption'),
             title: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-анкета-к-l.title'),
-            icon: 'list',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-hotel-а-о-п-и-l',
             caption: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-а-о-п-и-l.caption'),
             title: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-а-о-п-и-l.title'),
-            icon: 'list',
+            icon: 'folder open',
             children: null
           }, {
             link: 'i-i-s-hotel-ж-р-и-г-l',
             caption: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-ж-р-и-г-l.caption'),
             title: i18n.t('forms.application.sitemap.hotel.i-i-s-hotel-ж-р-и-г-l.title'),
-            icon: 'edit',
+            icon: 'paperclip',
             children: null
           }]
         }

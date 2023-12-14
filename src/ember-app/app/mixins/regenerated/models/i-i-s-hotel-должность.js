@@ -36,17 +36,11 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ДолжностьE', 'i-i-s-hotel-должность', {
     кодДолжност: attr('Код должност', { index: 0 }),
-    название: attr('Название', { index: 1 }),
-    паспДанные: belongsTo('i-i-s-hotel-пасп-данные', 'Пасп данные', {
-      фИО: attr('ФИО', { index: 3, hidden: true })
-    }, { index: 2, displayMemberPath: 'фИО' })
+    название: attr('Название', { index: 1 })
   });
 
   modelClass.defineProjection('ДолжностьL', 'i-i-s-hotel-должность', {
     кодДолжност: attr('Код должност', { index: 0 }),
-    название: attr('Название', { index: 1 }),
-    паспДанные: belongsTo('i-i-s-hotel-пасп-данные', 'ФИО', {
-      фИО: attr('ФИО', { index: 2 })
-    }, { index: -1, hidden: true })
+    название: attr('Название', { index: 1 })
   });
 };

@@ -30,15 +30,10 @@ namespace IIS.Hotel
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ДолжностьE", new string[] {
             "КодДолжност as \'Код должност\'",
-            "Название as \'Название\'",
-            "ПаспДанные as \'Пасп данные\'",
-            "ПаспДанные.ФИО as \'ФИО\'"}, Hidden=new string[] {
-            "ПаспДанные.ФИО"})]
-    [MasterViewDefineAttribute("ДолжностьE", "ПаспДанные", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
+            "Название as \'Название\'"})]
     [View("ДолжностьL", new string[] {
             "КодДолжност as \'Код должност\'",
-            "Название as \'Название\'",
-            "ПаспДанные.ФИО as \'ФИО\'"})]
+            "Название as \'Название\'"})]
     public class Должность : ICSSoft.STORMNET.DataObject
     {
         
